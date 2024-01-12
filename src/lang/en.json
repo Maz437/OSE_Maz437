@@ -256,8 +256,10 @@
   "OSE.armor.type": "Armor Type",
   "OSE.armor.unarmored": "Unarmored",
   "OSE.armor.light": "Light",
+  "OSE.armor.medium": "Medium",
   "OSE.armor.heavy": "Heavy",
   "OSE.armor.shield": "Shield",
+  "OSE.armor.helmet": "Helmet",
 
   "OSE.spells.spend": "{speaker} is casting {name}!",
   "OSE.spells.Memorized": "Memorized",
