@@ -1,7 +1,7 @@
 {
-  "name": "ose-dev",
-  "id": "ose-dev",
-  "title": "Old-School Essentials Development Build",
+  "name": "ose-dev-maz",
+  "id": "ose-dev-maz",
+  "title": "Old-School Essentials Maz Build",
   "description": "Simple, robust rules compatible with decades of Basic/Expert material",
   "version": "AUTOMATICALLY REPLACED BY GITHUB WORKFLOW ACTION",
   "minimumCoreVersion": "10",
