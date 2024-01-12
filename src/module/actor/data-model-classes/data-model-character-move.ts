@@ -84,20 +84,20 @@ export default class OseDataModelCharacterMove implements CharacterMove {
   #derivedSpeed() {
     if (this.#overEncumbranceLimit) return 0;
     if (this.#usingEquippedEncumbrance) {
-      if (this.#sevenNinthsEncumbered) return this.#moveBase * 0.25;
-      if (this.#fiveNinthsEncumbered) return this.#moveBase * 0.5;
-      return this.#oneThirdEncumbered ? this.#moveBase * 0.75 : this.#moveBase;
+      if (this.#sevenNinthsEncumbered) return this.#moveBase * 0.20;
+      if (this.#fiveNinthsEncumbered) return this.#moveBase * 0.6;
+      return this.#oneThirdEncumbered ? this.#moveBase * 0.8 : this.#moveBase;
     }
     if (this.#encumbranceVariant === "itembased") {
-      if (this.#sevenEighthsEncumbered) return this.#moveBase * 0.25;
-      if (this.#threeQuartersEncumbered) return this.#moveBase * 0.5;
+      if (this.#sevenEighthsEncumbered) return this.#moveBase * 0.20;
+      if (this.#threeQuartersEncumbered) return this.#moveBase * 0.6;
       return this.#fiveEighthsEncumbered
-        ? this.#moveBase * 0.75
+        ? this.#moveBase * 0.8
         : this.#moveBase;
     }
-    if (this.#halfEncumbered) return this.#moveBase * 0.25;
-    if (this.#threeEighthsEncumbered) return this.#moveBase * 0.5;
-    return this.#quarterEncumbered ? this.#moveBase * 0.75 : this.#moveBase;
+    if (this.#halfEncumbered) return this.#moveBase * 0.20;
+    if (this.#threeEighthsEncumbered) return this.#moveBase * 0.6;
+    return this.#quarterEncumbered ? this.#moveBase * 0.8 : this.#moveBase;
   }
 
   get base() {
